@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    dt_now = datetime.datetime.now() + datetime.timedelta(hours=9)
+    dt_now = datetime.datetime.now()
     return render_template('index.html', now=dt_now.strftime('%Y年%m月%d日 %H:%M:%S'))
 
 
